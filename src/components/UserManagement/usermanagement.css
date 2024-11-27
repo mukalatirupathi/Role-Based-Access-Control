@@ -1,0 +1,156 @@
+
+.user-management-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  background-color: #1a1a1a; 
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 255, 0, 0.3); 
+  padding: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-management-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00ff00;  
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.add-user-btn {
+  padding: 12px 20px;
+  background-color: #00ff00; 
+  color: #000000;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.add-user-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0, 255, 0, 0.4);  
+}
+
+.add-user-btn:active {
+  transform: scale(0.95);
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.user-table th {
+  background-color: #333333;  
+  color: #ffffff;  
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.user-table td {
+  background-color: #444444; 
+  color: #bbbbbb; 
+}
+
+.user-table tr:hover {
+  background-color: #666666;  
+}
+
+.user-table td, .user-table th {
+  border-bottom: 1px solid #555555;  
+}
+
+
+.user-action-btns {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-action-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #ffcc00; 
+  color: #000000;
+  font-weight: bold;
+}
+
+.edit-btn:hover {
+  background-color: #f39c12; 
+}
+
+.delete-btn {
+  background-color: #ff4c4c; 
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  background-color: #e74c3c;  /* Darker red on hover */
+}
+
+/* Icon Styling */
+.fas {
+  font-size: 18px;  /* Icon size */
+}
+
+/* Status Styling */
+.status {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center; /* Adjust as needed */
+}
+
+.status.active {
+  color: #ffffff;
+  background-color: #00ff00; /* Neon green for Active */
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.6); /* Glow effect */
+}
+
+.status.inactive {
+  color: #ffffff;
+  background-color: #e74c3c; /* Red for Inactive */
+  box-shadow: 0 0 10px rgba(231, 76, 60, 0.6); /* Glow effect */
+}
+
+.empty-screen{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+  align-items: center;
+  background-color: #333333; 
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 255, 0, 0.3);  
+  padding: 30px;
+  text-align: center;
+  color: rgb(159, 157, 157);
+}
+
